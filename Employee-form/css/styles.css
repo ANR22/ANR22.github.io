@@ -36,8 +36,6 @@ header img {
 .container {
 	width: 90%;
 	margin: 20px auto;
-	animation-name: slidein;
-	animation-duration: 3s;
 	border-radius: 10px;
 	background-color: white;
 	color: #202066;

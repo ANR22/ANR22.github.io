@@ -80,7 +80,7 @@ input:not([type=radio]):focus, textarea:focus
 }
 
 input[type="date"] {
-	width: unset;
+	width: 40%;
 }
 
 

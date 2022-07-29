@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  background: #f0f0f0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.navbar img {
+  cursor: pointer;
+  width: 311px;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  list-style-type: none;
+}
+.navbar ul li i {
+  color: rgba(39, 115, 201, 0.7);
+  font-size: 16px;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.navbar ul li i:not(.fa-ellipsis-vertical) {
+  background-color: rgba(39, 115, 201, 0.7);
+  color: white;
+  font-size: 12px;
+}
+
+.task-container {
+  margin: 132px auto;
+  width: 1136px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.task-container .top {
+  font-size: 20px;
+  padding: 10px 30px;
+  background-color: #0029ff;
+  color: white;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.task-container .task-title {
+  text-align: center;
+  margin-top: 42px;
+}
+.task-container .assets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 20px;
+}
+.task-container .assets-container .asset-container {
+  width: 461px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #aaaaaa;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.task-container .assets-container .asset-container .asset-body-container {
+  font-weight: bold;
+  font-size: 15px;
+}
+.task-container .assets-container .asset-container .asset-body-container i {
+  display: block;
+  cursor: pointer;
+  width: 15px;
+  margin: 5px 5px 5px auto;
+}
+.task-container .assets-container .asset-container .asset-body-container .asset-description {
+  display: none;
+  margin-top: 10px;
+  font-weight: normal;
+  padding: 20px;
+}
+.task-container .assets-container .asset-container .asset-heading {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.task-container .assets-container .asset-container .image {
+  width: 100%;
+}
+.task-container .assets-container .asset-container .docs {
+  width: 100%;
+  padding: 20px;
+}
+.task-container .assets-container .asset-container .docs iframe {
+  width: 100%;
+  height: 612px;
+}
+.task-container .assets-container .asset-container .asset-heading {
+  text-align: center;
+}
+.task-container .assets-container .asset-container .article {
+  width: 100%;
+  padding: 20px;
+}
+.task-container .assets-container .asset-container .article textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px #aaaaaa;
+}
+.task-container .assets-container .asset-container button {
+  border: none;
+  background-color: #0029ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  margin: 20px 0 0 auto;
+  cursor: pointer;
+}
+.task-container .assets-container .asset-container .audio {
+  width: 80%;
+  height: 100px;
+  border: none;
+  display: block;
+  margin: 10px auto;
+}
+.task-container .assets-container .asset-container .video {
+  width: 100%;
+  height: 200px;
+}
+.task-container .assets-container .asset-container .display-refelction {
+  padding: 20px;
+}
+
+.assets-nav {
+  position: absolute;
+  left: -180px;
+  top: 205px;
+  border-radius: 10px;
+  z-index: 999;
+  background-color: white;
+  height: 700px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.assets-nav h2 {
+  color: white;
+  background-color: black;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 40px;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+}
+.assets-nav h2 i {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.assets-nav .no-of-tasks {
+  margin: 30px 10px 10px auto;
+  display: block;
+  padding: 5px 19px 5px 15px;
+  width: 20px;
+  border: 1px solid lightblue;
+  border-radius: 10px;
+  color: blue;
+}
+.assets-nav .asset-nav-body {
+  display: none;
+}
+.assets-nav .asset-nav-body a {
+  display: block;
+  margin: 30px 40px;
+  font-size: 15px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+.assets-nav .asset-nav-body ul {
+  margin-left: 50px;
+  margin-right: 30px;
+}
+.assets-nav .asset-nav-body ul li {
+  margin: 30px 20px;
+  padding-bottom: 10px;
+  font-size: 13px;
+  border-bottom: 1px solid lightgray;
+}
+
+.tb,
+.eb {
+  width: 100%;
+}/*# sourceMappingURL=styles.css.map */

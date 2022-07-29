@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+
+  background: #f0f0f0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  img {
+    cursor: pointer;
+    width: 311px;
+  }
+  ul {
+    display: flex;
+    li {
+      list-style-type: none;
+
+      i {
+        color: rgba(39, 115, 201, 0.7);
+        font-size: 16px;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+      i:not(.fa-ellipsis-vertical) {
+        background-color: rgba(39, 115, 201, 0.7);
+        color: white;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.task-container {
+  margin: 132px auto;
+  width: 1136px;
+  // border-radius: 10px;
+  // box-shadow: 0 0 10px #aaaaaa;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .top {
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: #0029ff;
+    color: white;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    // margin-bottom: 30px;
+  }
+  .task-title {
+    text-align: center;
+    margin-top: 42px;
+  }
+
+  .assets-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 50px;
+    column-gap: 10px;
+    row-gap: 20px;
+
+    .asset-container {
+      width: 461px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaaaaa;
+      height: fit-content;
+      .asset-body-container {
+        // padding: 30px 30px 5px 30px;
+        font-weight: bold;
+        font-size: 15px;
+        i {
+          display: block;
+          cursor: pointer;
+          width: 15px;
+          margin: 5px 5px 5px auto;
+        }
+
+        .asset-description {
+          display: none;
+          margin-top: 10px;
+          font-weight: normal;
+          padding: 20px;
+        }
+      }
+
+      .asset-heading {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .image {
+        width: 100%;
+      }
+
+      .docs {
+        width: 100%;
+        padding: 20px;
+        iframe {
+          width: 100%;
+          height: 612px;
+        }
+      }
+
+      .asset-heading {
+        text-align: center;
+      }
+
+      .article {
+        width: 100%;
+        padding: 20px;
+        textarea {
+          width: 100%;
+          resize: none;
+          border-radius: 10px;
+          padding: 10px;
+          box-shadow: 0 0 10px #aaaaaa;
+        }
+      }
+
+      button {
+        border: none;
+        background-color: #0029ff;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: block;
+        margin: 20px 0 0 auto;
+        cursor: pointer;
+      }
+      .audio {
+        width: 80%;
+        height: 100px;
+        border: none;
+        display: block;
+        margin: 10px auto;
+      }
+      .video {
+        width: 100%;
+        height: 200px;
+      }
+      .display-refelction {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+.assets-nav {
+  position: absolute;
+  left: -180px;
+  top: 205px;
+  border-radius: 10px;
+  z-index: 999;
+  background-color: white;
+  height: 700px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  h2 {
+    color: white;
+    background-color: black;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 40px;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    i {
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .no-of-tasks {
+    margin: 30px 10px 10px auto;
+
+    display: block;
+    padding: 5px 19px 5px 15px;
+    width: 20px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    color: blue;
+  }
+
+  .asset-nav-body {
+    display: none;
+    a {
+      display: block;
+      margin: 30px 40px;
+      font-size: 15px;
+      border-bottom: 1px solid lightgray;
+      cursor: pointer;
+    }
+    ul {
+      margin-left: 50px;
+      margin-right: 30px;
+
+      li {
+        margin: 30px 20px;
+        padding-bottom: 10px;
+        font-size: 13px;
+        border-bottom: 1px solid lightgray;
+      }
+    }
+  }
+}
+
+.tb,
+.eb {
+  width: 100%;
+}

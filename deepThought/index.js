@@ -199,9 +199,9 @@ const assetBody = (asset) => {
   const { asset_type } = asset;
 
   if (asset.asset_content == "tb") {
-    return '<img src="tb.png" class="tb" alt="tb" />';
+    return '<img src="./tb.png" class="tb" alt="tb" />';
   } else if (asset.asset_content == "eb") {
-    return '<img src="eb.png" class="eb" alt="eb" />';
+    return '<img src="./eb.png" class="eb" alt="eb" />';
   } else if (asset.display_asset_video) {
     return `<iframe class='video' src=${asset.display_asset_video}></iframe>`;
   } else if (asset.display_asset_docs) {
